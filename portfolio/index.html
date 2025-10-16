@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title> Portfolio — Saraladevi Arun</title>
+  <meta name="description" content="Simple, clean portfolio template">
+  <link rel="stylesheet" href="/portfolio.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">SA</div>
+        <div>
+          <div style="font-weight:800">Saraladevi Arun</div>
+          <div style="font-size:12px;color:var(--muted)"> Web developer • Frontend Developer  </div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact" class="btn-primary">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div>
+        <h1>Hi — I’m Saraladevi Arun. I build static,dynamic and user friendly websites.</h1>
+        <p class="lead">I’m a Web developer specialising in responsive interfaces, Mobile friendly design. Below are a few projects I’ve Implemented.</p>
+        <p style="margin-top:12px"><a class="btn-primary" href="#projects">See projects</a></p>
+      </div>
+      <div class="grid" style="margin-top:0">
+        
+
+        <div class="card">
+          <h2>Skills</h2>
+          <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:12px">
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">React</span>
+            <span class="tag">WordPress</span>
+             <span class="tag">PHP</span>
+            <span class="tag">MySQL</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">Git</span>
+             
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" style="margin-top:22px">
+      <h2>Projects</h2>
+      <div class="project-grid" style="margin-top:12px">
+        <article class="project">
+          <h3>One Ring Rental</h3>
+          <p class="lead">This is a Next.js-based website for a house rental platform, featuring a static layout with dynamic ID routing. The site is built using Bootstrap for responsive design and JavaScript for interactive functionality.</p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag">Nextjs</span>
+             <a href="https://nextjs-one-ring-rental-xpv9.vercel.app/" class="tag">Live</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Lemonade stand</h3>
+          <p class="lead">Lemonade stand is a frontend project developed using HTML5,CSS3,SASS and javascript.</p>
+          <div class="tags" style="margin-top:10px">
+             <a href="https://sprightly-melomakarona-129284.netlify.app/" class="tag">Live</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>George’s Garden Centre</h3>
+          <p class="lead">George’s Garden Centre is a Bootstrap web application designed to help users find and purchase plants easily. The app features a user-friendly interface, a plant care guide, and a shopping cart for seamless transactions.</p>
+          <div class="tags" style="margin-top:10px">
+            <span class="tag">Bootstrap</span>
+             <a href="https://serene-yeot-6be6c7.netlify.app/" class="tag">Live</a>
+          </div>
+        </article>
+
+        <article class="project">
+          <h3>Spice food shop</h3>
+          <p class="lead">Spice food shop is an e-commerce website built with a focus on accessibility and performance. It features a clean design, easy navigation, and fast loading times.</p>
+          <div class="tags" style="margin-top:10px">
+            <a href="https://super-muffin-980610.netlify.app/" class="tag">Live</a>
+          </div>
+        </article>
+         <article class="project">
+          <h3>3D website</h3>
+          <p class="lead">This is a 3D Website built using Three.js, WebGL, GSAP (Animation library for moving Objects), OrbitControls (A Three.js helper for adding mouse-based controls), HTML5, CSS3, and JavaScript. Media queries are used to implement responsive design. Contact form implemented with form validation.</p>
+          <div class="tags" style="margin-top:10px">
+            <a href="https://3d-websites.netlify.app/" class="tag">Live</a>
+          </div>
+        </article>
+        <article class="project">
+          <h3>Event Handling Interactive Component</h3>
+          <p class="lead">This is an interactive component built using HTML, CSS, and JavaScript. It demonstrates event handling by allowing users to interact with various elements on the page and it's movement.</p>
+          <div class="tags" style="margin-top:10px">
+            <a href="https://resplendent-licorice-c39e9c.netlify.app/" class="tag">Live</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" style="margin-top:26px">
+      <div class="card">
+        <h2>About me</h2>
+        <p class="lead">I am a passionate, versatile, and dedicated Web Developer with expertise in HTML, CSS, JavaScript, Node.js, PHP, Angular, React, Next.js, and WordPress. Holds a Diploma in Front-End Web Development and a Graduate Certificate in Web Application Development, with proven skills demonstrated through practical projects. Passionate about learning new technologies, solving complex problems, and delivering innovative, user-focused solutions. Experienced with all stages of the development cycle for static and dynamic web projects. I love creating unique and functional websites.</p>
+        <ul style="margin-top:12px;color:var(--muted)">
+          <li>Available for full time and remote roles</li>
+          <li>Based in Perth, Australia</li>
+          <li>Open to learning new tech and collaborating on impactful projects</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact" style="margin-top:26px">
+      <div class="card">
+        <h2>Contact</h2>
+        <form onsubmit="event.preventDefault(); window.location='mailto:youremail@example.com?subject=Portfolio%20contact&body='+encodeURIComponent(document.getElementById('message').value);">
+          <input type="text" placeholder="Your name" required>
+          <input type="email" placeholder="Your email" required>
+          <textarea id="message" rows="5" placeholder="Message" required></textarea>
+          <div style="display:flex;gap:8px;margin-top:6px">
+            <button type="submit" style="background:linear-gradient(90deg,var(--accent),#60a5fa);color:#022">Send</button>
+            <button type="reset" style="background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© "Saraladevi Arun" — Built with ❤️ • <span style="color:var(--muted)"></span></p>
+    </footer>
+  </div>
+</body>
+</html>
